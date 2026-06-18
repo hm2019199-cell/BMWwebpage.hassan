@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMWcompettion</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: rgb(36, 34, 34);
+        }
+        .header{
+            width: 97%;
+            height: 70px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 30px;
+            background-color:  rgb(58, 54, 54);
+            display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+         z-index: 1000;
+         transition: 0.5s;
+         
+         
+            
+            
+        }
+    .hadding text{
+    margin-right: 40px;
+    }
+   .logo1{
+        width: 200px;
+        height: 70px;
+        float: left;
+        margin-left: 0%;
+        display: block;
+    }
+    .logo2{
+        width: 100spx;
+        height: 70px;
+        float: left;
+        margin-left: 0px;
+        display: block;
+        margin-right: 15px;
+        padding-left: 15px;
+    }
+    .text{
+        font-size: 12px;
+        border-left: 2px solid white;
+        padding-left: 20px;
+         color: white;
+}
+.home{
+    font-size: 30px;
+    gap: 40px;
+    
+}
+.minu{
+    display: flex;
+   gap: 40px;
+   margin-left: 40px;
+   color: aliceblue;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.home:hover{
+    background-color: rgb(187, 150, 27);
+    color: white;
+}
+.home{
+    padding: 3px;
+}
+.bodytext{
+    font-size: 60px;
+    padding-left: 100px;
+    padding-top: 20px;
+    font-weight: 400;
+    color: gainsboro;
+}
+.bodytext1{
+    font-size: 20px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 0%;
+    color: honeydew;
+}
+.photo1{
+    float: right;
+    margin-top: -160px;
+}
+.button{
+    background-color: blue;
+    width: 170px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-left: 120px;
+    margin-top: 30px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bodytext3{
+    margin-left: 210px;
+    margin-top: 60px;
+    font-weight: 100;
+    color: rgb(173, 173, 177);
+
+}
+p{
+    color: rgb(167, 171, 173);
+    font-weight: 200;
+}
+h4{
+    font-size: 20px;
+    color: solid white;
+    margin-left: 210px ;
+    font-weight: 200;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.big{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    background-color: aliceblue;
+}
+.showroom{
+    margin-top: 60px;
+    width: 60%;
+    height: fit-content;
+    float: right;
+
+}
+.video{
+    margin-left: 500px;
+    transform: rotate(-90deg);
+    position: absolute;
+    margin-top: -210px;
+    height: 140;
+
+}
+.bmw-text{
+    color: white;
+    font-size: 20px;
+    width: 70%;
+    line-height: 30px;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header"> 
+        <img class="logo2" src="circlelogo.svg" alt="">
+        <img class="logo1" src="logocopy.jpg" alt="">
+        <div class="text">
+    <h1>The Ultimate <br> Driving Machine</h1>
+</div>
+<div class="minu">
+<div class="home" style="font-size: 23px;">Home</div>
+<div class="home" style="font-size: 23px;">Magagine</div>
+<div class="home" style="font-size: 23px;">Model</div>
+<div class="home" style="font-size: 23px;">M motersports</div>
+<div class="home" style="font-size: 23px;">AREA M</div>
+<div class="home" style="font-size: 23px;">More</div>
+</div>
+
+        
+    </div>
+     <script>
+
+        let lastScroll = 0;
+
+        window.addEventListener("scroll", function(){
+
+            let currentScroll = window.pageYOffset;
+
+            if(currentScroll > lastScroll){
+
+                document.querySelector(".header").style.top = "-88px";
+
+            }
+            else{
+
+                document.querySelector(".header").style.top = "0";
+
+            }
+
+            lastScroll = currentScroll;
+
+        });
+
+    </script>
+    <h3 class="bodytext1">BMW Touring 24H</h3>
+    <h1 class="bodytext">THE ULTIATE<br>TOURING.</h1>
+    <button class="button">Experience now</button>
+    <video class="video" width="150" muted autoplay loop>
+    <source  src="instavideo.mp4" type="">
+</video>
+<script> document.getElementById("v1").playbackRate = 3;</script>
+    <img class="photo1" src="photo2.jpg" alt="">
+    <h2 class="bodytext3"><p style="font-size: 30px;">BMW Special Offers.</p><br>
+Monthly EMI starting from Rs.29,999/Month*.<br> Check Out similar BMW finance offers available<br> across the BMW range.</h2>
+<h4 ><a href="https://www.bmw.in/en/index.html " class="link">know more ></a></h4>
+<div class="big">
+    <img class="showroom" src="showroom.jpg" alt="">
+</div>
+<p class="bmw-text">
+The BMW M10 is a classic BMW engine famous for its strong performance.<br> reliability.
+It powered many iconic BMW cars and even made history in Formula 1 racing.
+</p>
+
+
+</body>
+</html>
